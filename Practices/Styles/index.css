@@ -1,0 +1,241 @@
+div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+/* Tasks for practicing float /width with calc*/
+.parent {
+  background-color: #d7d7d7;
+  width: 800px;
+  margin: 0 auto;
+  height: 240px;
+}
+.first-child {
+  text-align: center;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #f5f5f5;
+}
+.floated {
+  float: left;
+  width: calc((100% - 60px) / 3);
+  margin-left: 15px;
+  background-color: #f5f5f5;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.three-child {
+  float: left;
+  background-color: #f5f5f5;
+  margin-left: 15px;
+  width: calc((100% - 45px) / 2);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.four-child {
+  float: left;
+  background-color: #f5f5f5;
+  margin-left: 15px;
+  width: calc((100% - 75px) / 4);
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.second-task {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  color: black;
+}
+.normal {
+  background-color: rgb(166, 166, 166);
+}
+.one {
+  background-color: rgba(166, 166, 166, 0.2);
+}
+.two {
+  opacity: 0.1;
+}
+/* Tasks for practicing Position / z-index*/
+
+.title {
+  text-align: center;
+  background-color: rgb(247, 204, 254);
+  margin: 15px auto;
+  width: 25%;
+}
+.green,
+.red,
+.blue,
+.black {
+  width: 100px;
+  height: 100px;
+}
+.Task-four {
+  background-color: rgb(248, 248, 248);
+  position: relative;
+  margin: 20px;
+  height: 150px;
+}
+.green {
+  background-color: rgb(0, 128, 66);
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  z-index: 2;
+}
+.red {
+  background-color: rgb(249, 80, 71);
+  position: absolute;
+  z-index: 3;
+  top: 40px;
+  left: 45px;
+}
+.black {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+.blue {
+  background-color: rgb(78, 143, 222);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+/* Tasks for practicing Position  */
+
+.task-five {
+  width: 400px;
+  margin: 20px auto;
+  border: 4px solid;
+  padding: 20px;
+  border-top-color: rgb(249, 80, 71);
+  border-bottom-color: rgb(249, 80, 71);
+  border-right-color: rgb(78, 143, 222);
+  border-left-color: rgb(78, 143, 222);
+}
+.top-left,
+.bottom-left,
+.top-right,
+.bottom-right {
+  background-color: rgb(78, 143, 222);
+  padding: 5px 15px;
+  position: relative;
+}
+.top-left,
+.bottom-left {
+  border-right: 2px solid rgb(249, 80, 71);
+}
+.bottom-right,
+.top-right {
+  border-left: 2px solid rgb(249, 80, 71);
+}
+.top-left {
+  top: -120px;
+  left: -42px;
+}
+.bottom-left {
+  top: 45px;
+  left: -87px;
+}
+.top-right {
+  top: -120px;
+  left: 313px;
+}
+.bottom-right {
+  top: 45px;
+  left: 270px;
+}
+/* Tasks for practicing List*/
+.task-six {
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px auto;
+  font-weight: 200;
+  padding: 10px;
+}
+ul {
+  padding: 10px;
+  list-style-type: none;
+}
+li {
+  margin: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.css-courses {
+  margin-top: 20px;
+  background-color: aqua;
+  padding: 15px;
+}
+.css-courses li {
+  list-style-type: upper-roman;
+}
+.html-courses {
+  margin-top: 20px;
+  background-color: rgb(255, 153, 212);
+  padding: 15px;
+}
+.js-courses {
+  margin-top: 20px;
+  background-color: rgb(113, 243, 161);
+  margin: 0;
+
+  list-style: none;
+}
+.js-courses li {
+  list-style-position: inside;
+  list-style-type: circle;
+  margin-left: -10px;
+}
+/* Tasks for practicing Table*/
+.users-table {
+  width: 800px;
+  margin: 20px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 2px solid  #00bebb;
+}
+.table-title {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table img {
+  width: 60px;
+  height: 60px;
+}
+.users-table th,
+.users-table td {
+  padding: 15px;
+}
+.users-table thead {
+  background-color: rgb(57, 57, 57);
+  color: #ffffff;
+}
+.users-table tr {
+  text-align: center;
+}
+.users-table td {
+  padding: 20px;
+  background-color: rgb(235, 235, 235);
+}
+.view-btn,
+.del-btn {
+  color: #ffffff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.del-btn {
+  background-color: rgb(222, 33, 33);
+}
+.view-btn {
+  background-color: rgb(0, 124, 201);
+}
