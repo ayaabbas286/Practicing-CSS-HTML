@@ -1,0 +1,19 @@
+.first-task div,
+.second-task div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 60px;
+  margin: 40px auto;
+  justify-content: center;
+}
+.one,
+.three {
+  background-color: #dcdcdc;
+  text-align: center;
+}
+div:empty {
+  background-color: red;
+}
+
+

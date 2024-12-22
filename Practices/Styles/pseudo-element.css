@@ -1,0 +1,42 @@
+.main {
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  margin: 20px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.start::first-letter {
+  background-color: rgb(255, 48, 48);
+  margin-left: -25px;
+  font-size: 20px;
+  padding: 5px 8px;
+  color: aliceblue;
+  left: 200px;
+}
+.second-task {
+  width: 300px;
+  height: 40px;
+  margin: 40px auto;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.second-task p {
+  text-align: left;
+  padding: 10px 10px;
+  background-color: rgb(228, 228, 228);
+}
+.second-task p::before {
+  content: attr(data-person);
+  background-color: rgb(228, 228, 228);
+  float: left;
+  margin-right: 10px;
+  margin-left: -90px;
+  margin-top: -7px;
+  padding: 8px 10px;
+  width: 45px;
+  text-align: center;
+}
