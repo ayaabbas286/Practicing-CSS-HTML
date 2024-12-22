@@ -27,6 +27,8 @@
 .second-task p {
   text-align: left;
   padding: 10px 10px;
+  position: relative;
+  border-left: 2px solid rgb(0, 169, 130);
   background-color: rgb(228, 228, 228);
 }
 .second-task p::before {
@@ -39,4 +41,17 @@
   padding: 8px 10px;
   width: 45px;
   text-align: center;
+  position: absolute;
+}
+.second-task p::after {
+  content: "";
+  background-color: rgba(255, 17, 17, 0); 
+  width: 0;
+  height: 0 ;
+  right: 300px;
+  top:9px;
+  position: absolute;
+  border: 8px;
+  border-style:solid;
+  border-color: transparent rgb(0, 169, 130) transparent transparent;
 }
