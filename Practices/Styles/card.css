@@ -50,8 +50,34 @@ button {
   color: #ffffff;
   border: 1px solid rgb(46, 139, 246);
   border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
 }
-.parent::after{
-content: "";
-border: 2px solid rgb(46, 139, 246);
+
+.free-sale::after {
+  content: "";
+  position: absolute;
+  height: 250px;
+  right: -30px;
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 1px solid  rgb(46, 139, 246);
 }
+.sale::before {
+    content: "Or";
+    position: absolute;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border-radius: 50%;
+    left: -43px;
+    bottom: 100px;
+    background-color:rgb(46, 139, 246);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
