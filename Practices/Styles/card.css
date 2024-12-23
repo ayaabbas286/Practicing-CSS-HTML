@@ -1,0 +1,57 @@
+.parent {
+  background-color: #ffffff;
+  width: 550px;
+  overflow: hidden;
+  margin: 100px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.free-sale,
+.sale {
+  float: left;
+  position: relative;
+  margin: 0 30px;
+  border: 1px solid rgb(217, 217, 217);
+  height: 250px;
+  border-radius: 5px;
+  width: 200px;
+  background-color: rgb(219, 218, 218);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.inner-div {
+  border: 1px solid rgb(183, 183, 183);
+  position: absolute;
+  background-color: #c9c8c8;
+  top: 60px;
+  left: 19px;
+  font-weight: bolder;
+  padding: 65px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.basic-btn {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+}
+.pro-btn {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+}
+button {
+  padding: 10px 60px;
+  background-color: rgb(46, 139, 246);
+  color: #ffffff;
+  border: 1px solid rgb(46, 139, 246);
+  border-radius: 5px;
+}
+.parent::after{
+content: "";
+border: 2px solid rgb(46, 139, 246);
+}
