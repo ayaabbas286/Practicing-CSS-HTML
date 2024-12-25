@@ -1,0 +1,37 @@
+._task-one {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(239, 93, 26);
+  font-weight: bold;
+  box-shadow: 5px 0px 0px 0px rgb(239, 93, 26),
+    -6px 0px 0px 0px rgb(0, 147, 210);
+}
+.parent div {
+  padding: 10px 90px;
+  background-color: rgb(227, 50, 33);
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.parent {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  justify-content: space-around;
+  justify-items: center;
+  align-content: space-between;
+  background-color: rgb(237, 237, 237);
+}
