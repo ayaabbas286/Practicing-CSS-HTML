@@ -44,7 +44,7 @@ background-color: rgb(229, 229, 229);
 order: 1;
 }  */
 /* Task 2 in Felx-box  */
-.parent {
+/* .parent {
   width: 600px;
   height: 300px;
   display: flex;
@@ -74,4 +74,46 @@ order: 1;
 .three {
   order: 2;
   align-self: flex-end;
+} */
+/* Task 3 in Felx-box  */
+
+.parent {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 0px auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(229, 229, 229);
+}
+.parent div {
+  padding: 10px;
+  text-align: center;
+  width: calc(60% / 4);
+  color: #fff;
+  align-content: center;
+  height: calc(100%/2);
+}
+.one {
+   background-color: rgb(245, 168, 45);
+   order:2;
+   align-self: flex-start;
+}
+.two {
+    background-color: rgb(128, 232, 109);
+    order:3;
+    align-self: flex-end;
+}
+.three {
+    background-color: rgb(96, 47, 54);
+    order:4;
+    align-self: flex-start;
+}
+.four {
+  background-color: rgb(77, 4, 100);
+  order:1;
+  align-self: flex-end;
+
 }
