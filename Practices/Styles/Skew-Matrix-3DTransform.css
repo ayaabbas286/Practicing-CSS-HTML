@@ -1,0 +1,15 @@
+:root{
+--main-color:orangered;
+}
+h1{
+    height: 100px;
+    width: 150px;
+    margin: 50px auto;
+    background-color: var(--main-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
