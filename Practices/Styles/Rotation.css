@@ -1,0 +1,81 @@
+body {
+  transform: translate(50%,50%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+div {
+  background-color: rgb(230, 229, 229);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+div::before {
+  content: "";
+  position: absolute;
+  border-left: 10px solid #ea00ff;
+  border-bottom: 10px solid #ea00ff;
+  border-right: 10px solid #ea00ff;
+  border-top: 10px solid transparent;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transition-duration: 0.5s;
+}
+div::after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid #0077ff;
+  border-bottom: 10px solid #0077ff;
+  border-right: 10px solid #0077ff;
+  border-top: 10px solid transparent;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition-duration: 0.5s;
+  transform: scale(1.1) rotate(90deg);
+  -webkit-transform: scale(1.1) rotate(90deg);
+  -moz-transform: scale(1.1) rotate(90deg);
+  -ms-transform: scale(1.1) rotate(90deg);
+  -o-transform: scale(1.1) rotate(90deg);
+}
+
+div:hover::before {
+  transform: rotate(-270deg);
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+}
+div:hover::after {
+  transform: scale(1.1) rotate(-90deg);
+  -webkit-transform: scale(1.1) rotate(-90deg);
+  -moz-transform: scale(1.1) rotate(-90deg);
+  -ms-transform: scale(1.1) rotate(-90deg);
+  -o-transform: scale(1.1) rotate(-90deg);
+}
