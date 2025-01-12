@@ -1,5 +1,6 @@
 :root {
   --main-color: orangered;
+  --secondary-color: #258bff;
 }
 h1 {
   position: relative;
@@ -30,4 +31,37 @@ h1::after {
   background-color: var(--main-color);
   z-index: -1;
   transform: skewx(-20deg) rotate(-10deg);
+}
+h2 {
+  position: relative;
+  height: 50px;
+  width: 115px;
+  margin: 50px auto;
+  text-align: center;
+  display: flex;
+  background-color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  z-index: 1;
+}
+h2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  z-index: -1;
+  left: -15px;
+  transform: skewx(20deg);
+}
+h2::after {
+  position: absolute;
+  content: "";
+  width: 10%;
+  left: -30px;
+  height: 100%;
+  background-color: var(--secondary-color);
+  z-index: -1;
+  transform: skewx(20deg);
 }
