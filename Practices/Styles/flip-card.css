@@ -8,6 +8,7 @@
 }
 body {
   transform: translate(50%, 50%);
+  perspective: 700px;
 }
 div {
   width: 200px;
@@ -17,6 +18,7 @@ div {
   position: relative;
   transform-style: preserve-3d;
   color: #fff;
+  
 }
 div::after {
   width: 100%;

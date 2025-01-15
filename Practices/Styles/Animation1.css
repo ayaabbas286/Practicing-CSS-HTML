@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+div {
+  width: 50px;
+  position: relative;
+  height: 50px;
+  background-color: transparent;
+  border: 4px solid rgb(255, 0, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50% 40%;
+  border-radius: 50%;
+  border-left-color: transparent;
+}
+div::after, div::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+ 
+  }
+div::after{
+    width: 55px;
+    height: 55px;
+    border: 4px solid rgb(0, 119, 255);
+    border-left-color: transparent;
+}
+div::before {
+    width: 65px;
+    height:65px;
+    border: 4px solid rgb(255, 167, 15);
+    border-right-color: transparent;    
+  }
+div, div::after, div::before{
+ animation-name: Spinner;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+
+}
+  @keyframes Spinner {
+  to {
+      transform: rotate(360deg);
+    }
+  }
+  div:hover, div:hover::after, div:hover::before {
+    animation-play-state: running;
+  }
+
