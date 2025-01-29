@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Mobile Screens */
+
+@media (max-width: 767px) {
+  .Parent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .Parent > div {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+  }
+  .Title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .txt {
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+    margin: 5px;
+  }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) {
+  .Parent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .Parent > div {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+  }
+  .Title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .txt {
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+    margin: 5px;
+  }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Parent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .Parent > div {
+    width: calc(50% - 20px);
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+  }
+  .Title {
+    color: rgb(187, 0, 12);
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .txt {
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+    margin: 5px;
+  }
+}
+/* Large Screens */
+
+@media (min-width: 1200px) {
+  .Parent {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+  .Parent > div {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+  }
+  .Title {
+    color: rgb(0, 187, 153);
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .txt {
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+
+    margin: 5px;
+  }
+}
