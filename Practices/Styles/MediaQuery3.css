@@ -109,24 +109,25 @@
     margin: 20px auto;
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr auto 1fr;
-    grid-template-areas: "header header header" " side_l . side_r " " foot foot foot";
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:repeat(3,1fr) ;
   }
   .card1 {
-    grid-area: header;
+grid-column: span 6;    
   }
   .card2 {
-    grid-area: side_l;
-  }
+    grid-column: span 3;    
+}
   .card3 {
-    grid-area: side_r;
+    grid-column: span 3;    
+
   }
   .card4 {
-    grid-area: foot;
+    grid-column: span 6;    
+
   }
   .Parent > div {
-    margin-top: 10px;
+   
     padding: 20px;
     text-align: center;
     background-color: #eee;
