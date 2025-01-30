@@ -63,12 +63,27 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .Parent {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "header header header" " side_l  side_r  foot";
+  }
+  .card1 {
+    grid-area: header;
+  }
+  .card2 {
+    grid-area: side_l;
+  }
+  .card3 {
+    grid-area: side_r;
+  }
+  .card4 {
+    grid-area: foot;
   }
   .Parent > div {
-    width: calc(50% - 20px);
     margin-top: 10px;
     padding: 20px;
     text-align: center;
@@ -76,7 +91,7 @@
     transition: background-color 0.3s ease;
   }
   .Title {
-    color: rgb(187, 0, 12);
+    color: rgb(109, 24, 29);
     font-size: 14px;
     font-weight: bold;
   }
@@ -90,8 +105,25 @@
 
 @media (min-width: 1200px) {
   .Parent {
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 2fr 1fr;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "header header header" " side_l . side_r " " foot foot foot";
+  }
+  .card1 {
+    grid-area: header;
+  }
+  .card2 {
+    grid-area: side_l;
+  }
+  .card3 {
+    grid-area: side_r;
+  }
+  .card4 {
+    grid-area: foot;
   }
   .Parent > div {
     margin-top: 10px;
@@ -108,7 +140,6 @@
   .txt {
     font-size: 12px;
     color: rgb(40, 40, 40);
-
     margin: 5px;
   }
 }
